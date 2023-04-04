@@ -1,4 +1,6 @@
+<app-navbar></app-navbar>
 <div class="container">
+  
     <div class="ui-g">
     
       <div class="ui-g-12">
@@ -12,10 +14,10 @@
     
       <div class="ui-g-12" style="padding-top: 10px;">
         <label style="display: block;">Vencimento</label>
-        <input pInputText type="text" style="width: 95px; height: 40px;">
+        <p-calendar style="width: 95px; height: 40px;"></p-calendar>
     
         <label style="padding: 0 10px;">Até</label>
-        <input pInputText type="text" style="width: 95px; height: 40px">
+        <p-calendar></p-calendar>
       </div>
     
       <div class="ui-g-12" style="padding-top: 10px;">
@@ -62,7 +64,7 @@
         </div>
   
         <div class="ui-g-12" style="padding: 20px 0 ;">
-          <a pButton label="Novo Lançamento"></a>
+          <a routerLink="/lancamentos-cadastro" pButton label="Novo Lançamento"></a>
         </div> 
   
         <div class="ui-g-12" style="padding: 20px 0 ;">
