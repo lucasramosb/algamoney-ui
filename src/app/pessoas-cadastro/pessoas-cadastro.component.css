@@ -1,0 +1,62 @@
+.inputG{
+    display: flex;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.desc{ 
+    width: 100%;
+    
+}
+.vlr{
+    width: 30%;
+    padding: 0 15px;
+}
+
+/* 2 linha */
+.lugadouro{ 
+    width: 80%;
+    
+}
+.numero{
+    width: 20%;
+    padding-left: 15px;
+}
+
+/* 3 linha */
+.complemento{ 
+    width: 40%;
+    
+}
+.bairro{
+    width: 45%;
+    padding-left: 15px;
+}
+
+.cep{
+    width: 15%;
+    padding-left: 15px;
+}
+
+
+/* 3 linha */
+.cidade{ 
+    width: 50%;
+    
+}
+.estado{
+    width: 50%;
+    padding-left: 15px;
+}
+
+/* Button */
+.btnSalvar{
+    padding-top: 25px;
+    
+}
+.btnSalvar a{
+   text-decoration: none;
+   color: #3b82f6;
+   cursor: pointer;
+    
+}
