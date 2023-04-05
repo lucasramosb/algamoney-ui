@@ -1,1 +1,20 @@
-<p>navbar works!</p>
+<nav class="navBar">
+    <div class="container">
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <a (click)="exibindoMenu = !exibindoMenu" style="cursor:pointer">
+                    <fa-icon class="fa-xl" style="color: #ffffff" [icon]="faBars"></fa-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="exibindoMenu == true">
+        <ul class="navBar-menu">
+            <li class="navBar-usuario">Administrador</li>
+            <li class="navBar-menuItem"><a routerLink="/lancamentos-pesquisa">Lançamentos</a></li>
+            <li class="navBar-menuItem"><a routerLink="/pessoas-pesquisa">Pessoas</a></li>
+            <li class="navBar-menuItem"><a >Logout</a></li>
+        </ul>
+    </div>
+</nav>
