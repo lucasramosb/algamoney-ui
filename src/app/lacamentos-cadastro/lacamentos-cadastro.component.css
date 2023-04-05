@@ -1,0 +1,33 @@
+.inputG{
+    display: flex;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.desc{ 
+    width: 70%;
+    
+}
+.vlr{
+    width: 30%;
+    padding: 0 15px;
+}
+.cat{ 
+    width: 50%;
+    
+}
+.pess{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.btnSalvar{
+    padding-top: 25px;
+    
+}
+.btnSalvar a{
+   text-decoration: none;
+   color: #3b82f6;
+   cursor: pointer;
+    
+}

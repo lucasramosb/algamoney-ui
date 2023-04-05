@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <form>
+        <div >
+            <div >
+                <h1>Novo Lançamento</h1>
+            </div>
+
+            <div>   
+                <p-selectButton [options]="tipos" #tipo></p-selectButton>
+            </div>
+
+            <div style=" width: 40%; padding-top: 25px;">
+                <label>Vencimento</label>
+                <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+            
+                <label style="padding: 0 10px;">{{ tipo.value === 'RECEITA' ? 'Recebimento' : 'Pagamento' }}</label>
+                <p-calendar dateFormat="dd/mm/yy"></p-calendar>
+            </div>
+        </div>
+
+        <div class="inputG"> 
+            <div class="desc p-fluid">
+                <label>Descrição </label>
+                <input pInputText type="text" name="descricao" ngModel #descricao="ngModel" required minlength="5"> 
+            </div>
+            
+            <div class="vlr p-fluid" >
+                <label>Valor</label>
+                <input currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', allowNegative: false }" pInputText type="text" placeholder="0,00">
+            </div>
+        </div>
+
+        <div class="inputG"> 
+            <div class="cat p-fluid">
+                <label>Categoria</label>
+                <p-dropdown  [options]="categorias"></p-dropdown>
+            </div>
+            
+            <div class="pess p-fluid" >
+                <label>Pessoa</label>
+                <p-dropdown [filter]="true" [options]="pessoas"></p-dropdown>
+            </div>
+        </div>
+
+        <div class="p-fluid">
+            <label style="width: 100%;">Observação</label>
+            <textarea style="width: 100%; display: block;" rows="5" pInputTextarea ></textarea>
+        </div>
+
+        <div class="btnSalvar">
+            <button type="submit" pButton>Salvar</button>
+            <button style="margin-left: 15px;" type="submit" pButton>Novo</button>
+            <a routerLink="/lancamentos-pesquisa" style="margin-left: 15px; " href="#">Voltar para a pesquisa</a>
+        </div>
+
+    </form>
+</div>
+
+
