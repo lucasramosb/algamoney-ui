@@ -11,24 +11,24 @@
 
         <div class="inputG"> 
             <div class="desc p-fluid">
-                <label>Pessoa</label>
-                <input pInputText type="text">
+                <label>Nome</label>
+                <input pInputText type="text" #nome>
             </div>
         </div>
 
         <div class="inputG"> 
             <div class="lugadouro p-fluid">
-                <label>Lugadouro</label>
-                <input pInputText type="text">
+                <label>Cidade</label>
+                <input pInputText type="text" #cidade>
             </div>
             
             <div class="numero p-fluid" >
-                <label>Numero</label>
-               <input pInputText type="text">
+                <label>Estado</label>
+               <input pInputText type="text" #estado>
             </div>
         </div>
 
-        <div class="inputG"> 
+        <!-- <div class="inputG"> 
             <div class="complemento p-fluid">
                 <label>Complemento</label>
                 <input pInputText type="text">
@@ -55,11 +55,11 @@
                 <label>Estado</label>
                <input pInputText type="text">
             </div>
-        </div>
+        </div> -->
 
         <!--Button -->
         <div class="btnSalvar">
-            <button type="submit" pButton>Salvar</button>
+            <button type="submit" pButton (click)="adicionar(nome.value, cidade.value, estado.value)">Salvar</button>
             <button style="margin-left: 15px;" type="submit" pButton>Novo</button>
             <a routerLink="/pessoas-pesquisa" style="margin-left: 15px;">Voltar para a pesquisa</a>
         </div>
