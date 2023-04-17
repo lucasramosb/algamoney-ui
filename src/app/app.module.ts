@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import {TabViewModule} from 'primeng/tabview';
 import {InputTextModule} from 'primeng/inputtext';
@@ -21,6 +23,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { LacamentosCadastroComponent } from './lacamentos-cadastro/lacamentos-cadastro.component';
 import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.component';
+import { LancamentosService } from 'services/lancamentos.service';
+import { PessoasService } from 'services/pessoas.service';
+import { MessagesModule } from 'primeng/messages';
 
 
 @NgModule({
@@ -46,9 +51,11 @@ import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.co
     DropdownModule,
     SelectButtonModule,
     InputMaskModule,
-    CurrencyMaskModule
+    CurrencyMaskModule,
+    HttpClientModule,
+    MessagesModule,
   ],
-  providers: [],
+  providers: [LancamentosService, PessoasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
