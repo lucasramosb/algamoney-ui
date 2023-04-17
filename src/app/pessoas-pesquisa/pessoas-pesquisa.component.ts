@@ -1,22 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faCoffee, faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { PessoasService } from 'services/pessoas.service';
 
 @Component({
   selector: 'app-pessoas-pesquisa',
   templateUrl: './pessoas-pesquisa.component.html',
   styleUrls: ['./pessoas-pesquisa.component.css']
 })
-export class PessoasPesquisaComponent {
+export class PessoasPesquisaComponent implements OnInit {
 
-  pessoas = [
-    {nome: 'Jose Amilton', cidade: 'Uberlandia', estado: 'MG', status: true },
-    {nome: 'Manoel Pinheiro', cidade: 'São Paulo', estado: 'SP', status: false },
-    {nome: 'Luis Pereira', cidade: 'Florianopolis', estado: 'SC', status: false },
-    {nome: 'Vilmar Andrade', cidade: 'Curitiba', estado: 'PR', status: true },
-    {nome: 'Carla Souza', cidade: 'Rio de Janeiro', estado: 'RJ', status: false },
-    {nome: 'Clara Lima', cidade: 'Belo Horizonte', estado: 'MG', status: true },
-    {nome: 'Nicolas Almeida', cidade: 'Porto Seguro', estado: 'BA2', status: true }
-  ] ; 
+  constructor(private pessoasService: PessoasService){}
+  
+  pessoas: any = [] ;
+  
+  getPessoas(){
+    this.pessoasService.getPessoas()
+    .then(pessoas => {
+      this.pessoas = pessoas
+    })
+  };
+
+  ngOnInit(): void {
+    this.getPessoas()
+  }
+
+  excluir(id: number){
+    this.pessoasService.deletePessoa(id)
+    .then(() => this.getPessoas())
+  }
+
 
   faCoffee = faCoffee;
   faPen = faPen;
