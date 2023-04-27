@@ -5,6 +5,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .nome{ 
     width: 85%;
     
@@ -16,8 +17,12 @@
 /* .nome{ 
     width: 50%;
 >>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
+=======
+.desc{ 
+    width: 100%;
+>>>>>>> parent of f74469f (atualização de inputs + primeflex)
     
-} */
+}
 .vlr{
     width: 30%;
     padding: 0 15px;
@@ -25,15 +30,20 @@
 
 /* 2 linha */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .cidade{ 
     width: 80%;
 =======
 /* .cidade{ 
     width: 50%;
 >>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
+=======
+.lugadouro{ 
+    width: 80%;
+>>>>>>> parent of f74469f (atualização de inputs + primeflex)
     
 }
-.estado{
+.numero{
     width: 20%;
 <<<<<<< HEAD
     padding: 0 15px;
@@ -49,8 +59,12 @@
 }
 =======
     padding-left: 15px;
+<<<<<<< HEAD
 } */
 >>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
+=======
+}
+>>>>>>> parent of f74469f (atualização de inputs + primeflex)
 
 /* 3 linha */
 /* .complemento{ 
@@ -70,6 +84,7 @@
 
 /* 3 linha */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* .cidade{ 
     width: 50%;
     
@@ -88,6 +103,16 @@
     
 >>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
 } */
+=======
+.cidade{ 
+    width: 50%;
+    
+}
+.estado{
+    width: 50%;
+    padding-left: 15px;
+}
+>>>>>>> parent of f74469f (atualização de inputs + primeflex)
 
 /* Button */
 .btnSalvar{
@@ -99,8 +124,4 @@
    color: #3b82f6;
    cursor: pointer;
     
-}
-
-.grid{
-    margin-top: 15px;
 }
