@@ -4,8 +4,13 @@
     width: 100%;
 }
 
-.desc{ 
-    width: 100%;
+.nome{ 
+    width: 85%;
+    
+}
+.idade{ 
+    width: 15%;
+    padding: 0 15px;
     
 }
 .vlr{
@@ -14,17 +19,26 @@
 }
 
 /* 2 linha */
-.lugadouro{ 
+.cidade{ 
     width: 80%;
     
 }
-.numero{
+.estado{
     width: 20%;
-    padding-left: 15px;
+    padding: 0 15px;
+}   
+
+.email{ 
+    width: 50%;
+}
+.celular{
+    width: 30%;
+    float: left;
+    padding: 0 15px;
 }
 
 /* 3 linha */
-.complemento{ 
+/* .complemento{ 
     width: 40%;
     
 }
@@ -36,18 +50,18 @@
 .cep{
     width: 15%;
     padding-left: 15px;
-}
+} */
 
 
 /* 3 linha */
-.cidade{ 
+/* .cidade{ 
     width: 50%;
     
 }
 .estado{
     width: 50%;
     padding-left: 15px;
-}
+} */
 
 /* Button */
 .btnSalvar{

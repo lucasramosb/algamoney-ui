@@ -1,7 +1,9 @@
 export interface Ipessoas{
     id? : number,
     nome: string,
+    idade:number,
     cidade: string,
     estado: string,
-    status?: boolean 
+    email: string,
+    celular: number
 }

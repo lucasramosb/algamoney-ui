@@ -1,7 +1,8 @@
 
 <app-navbar></app-navbar>
 <div class="container">
-    <form>
+
+    <form  (ngSubmit)="postar(formNome.value, formIdade.value, formCidade.value, formEstado.value, formEmail.value, formCelular.value )">
 
         <div class="ui-g">
             <div class="p-fluid">
@@ -10,56 +11,43 @@
         </div>
 
         <div class="inputG"> 
-            <div class="desc p-fluid">
+            <div class="nome p-fluid">
                 <label>Nome</label>
-                <input pInputText type="text" #nome>
+                <input ngModel required="true" minlength="5" #formNome="ngModel" name="nome" pInputText type="text" #nome>
             </div>
-        </div>
-
-        <div class="inputG"> 
-            <div class="lugadouro p-fluid">
-                <label>Cidade</label>
-                <input pInputText type="text" #cidade>
+            <div class="idade p-fluid">
+                <label>Idade</label>
+                <input ngModel #formIdade="ngModel" name="idade" pInputText type="number" #nome>
             </div>
-            
-            <div class="numero p-fluid" >
-                <label>Estado</label>
-               <input pInputText type="text" #estado>
-            </div>
-        </div>
-
-        <!-- <div class="inputG"> 
-            <div class="complemento p-fluid">
-                <label>Complemento</label>
-                <input pInputText type="text">
-            </div>
-            
-            <div class="bairro p-fluid" >
-                <label>Bairro</label>
-               <input pInputText type="text">
-            </div>
-
-            <div class="cep p-fluid" >
-                <label>CEP</label>
-                <p-inputMask mask="99999-999"></p-inputMask>
-            </div>  
         </div>
 
         <div class="inputG"> 
             <div class="cidade p-fluid">
                 <label>Cidade</label>
-                <input pInputText type="text">
+                <input ngModel #formCidade="ngModel" name="cidade" pInputText type="text" #cidade>
             </div>
             
-            <div class="estado p-fluid" >
+            <div class="estado p-fluid">
                 <label>Estado</label>
-               <input pInputText type="text">
+               <input ngModel #formEstado="ngModel" name="estado" pInputText type="text" #estado>
             </div>
-        </div> -->
+        </div>
+
+        <div class="inputG"> 
+            <div class="email p-fluid">
+                <label>E-mail</label>
+                <input ngModel #formEmail="ngModel" name="email" pInputText type="text">
+            </div>
+        
+            <div class="celular p-fluid" >
+                <label>Celular</label>
+                <input ngModel #formCelular="ngModel" name="celular" pInputText type="text">   
+            </div>
+        </div>
 
         <!--Button -->
         <div class="btnSalvar">
-            <button type="submit" pButton (click)="adicionar(nome.value, cidade.value, estado.value)">Salvar</button>
+            <button type="submit" pButton >Salvar</button>
             <button style="margin-left: 15px;" type="submit" pButton>Novo</button>
             <a routerLink="/pessoas-pesquisa" style="margin-left: 15px;">Voltar para a pesquisa</a>
         </div>

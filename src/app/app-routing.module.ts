@@ -6,7 +6,7 @@ import { LacamentosCadastroComponent } from './lacamentos-cadastro/lacamentos-ca
 import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'lancamentos-pesquisa', pathMatch: 'full'},
+  {path: '', redirectTo: 'pessoas-cadastro', pathMatch: 'full'},
   {path: 'lancamentos-pesquisa', component: LacamentosPesquisaComponent},
   {path: 'pessoas-pesquisa', component: PessoasPesquisaComponent },
   {path: 'lancamentos-cadastro', component: LacamentosCadastroComponent},

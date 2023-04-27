@@ -12,8 +12,12 @@ export class PessoasCadastroComponent {
 
   }
 
-  adicionar(nome: string, cidade: string, estado: string){
-    this.pessoasService.postPessoas({nome: nome, cidade: cidade, estado: estado})
+  // postar(nome: string,idade: number, cidade: string, estado: string, email: string, celular: number){
+  //   console.log(nome, idade, cidade, estado, email, celular)
+  // }
+
+  postar(nome: string, idade: number, cidade: string, estado: string, email: string, celular: number){
+    this.pessoasService.postPessoas({nome: nome, idade: idade, cidade: cidade, estado: estado, email: email, celular: celular})
     .then(()=> console.log(nome, cidade, estado))
   }
 

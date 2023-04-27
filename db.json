@@ -77,30 +77,56 @@
     {
       "id": 1,
       "nome": "Jose Amilton",
+      "idade": 26,
       "cidade": "Uberlandia",
       "estado": "MG",
-      "status": true
+      "email": "jose@gmail.com",
+      "celular": 9999999
     },
     {
       "id": 2,
       "nome": "Manoel Pinheiro",
+      "idade": 26,
       "cidade": "São Paulo",
       "estado": "SP",
-      "status": false
+      "email": "manoel@gmail.com",
+      "celular": 9999999
     },
     {
       "id": 3,
       "nome": "Luis Pereira",
+      "idade": 26,
       "cidade": "Florianopolis",
       "estado": "SC",
-      "status": false
+      "email": "luis@hotmail.com",
+      "celular": 9999999
     },
     {
       "id": 4,
       "nome": "Vilmar Andrade",
+      "idade": 26,
       "cidade": "Curitiba",
       "estado": "PR",
-      "status": true
+      "email": "vilmar@outlook.com",
+      "celular": 9999999
+    },
+    {
+      "nome": "Lucas Ramos",
+      "idade": 18,
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "email": "lucas@gmail.com",
+      "celular": "9999999",
+      "id": 5
+    },
+    {
+      "nome": "Bianca",
+      "idade": 26,
+      "cidade": "Belo Horizonte",
+      "estado": "Mg",
+      "email": "bianca@gmail.com",
+      "celular": "99999999",
+      "id": 7
     }
   ],
   "categorias": [
