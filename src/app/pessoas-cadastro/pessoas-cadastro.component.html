@@ -11,25 +11,21 @@
         </div>
 
         <div class="inputG"> 
-            <div class="nome p-fluid">
+            <div class="desc p-fluid">
                 <label>Nome</label>
-                <input ngModel required="true" minlength="5" #formNome="ngModel" name="nome" pInputText type="text" #nome>
-            </div>
-            <div class="idade p-fluid">
-                <label>Idade</label>
-                <input ngModel #formIdade="ngModel" name="idade" pInputText type="number" #nome>
+                <input pInputText type="text" #nome>
             </div>
         </div>
 
         <div class="inputG"> 
-            <div class="cidade p-fluid">
+            <div class="lugadouro p-fluid">
                 <label>Cidade</label>
-                <input ngModel #formCidade="ngModel" name="cidade" pInputText type="text" #cidade>
+                <input pInputText type="text" #cidade>
             </div>
             
-            <div class="estado p-fluid">
+            <div class="numero p-fluid" >
                 <label>Estado</label>
-               <input ngModel #formEstado="ngModel" name="estado" pInputText type="text" #estado>
+               <input pInputText type="text" #estado>
             </div>
         </div>
 
@@ -43,7 +39,24 @@
                 <label>Celular</label>
                 <input ngModel #formCelular="ngModel" name="celular" pInputText type="text">   
             </div>
+
+            <div class="cep p-fluid" >
+                <label>CEP</label>
+                <p-inputMask mask="99999-999"></p-inputMask>
+            </div>  
         </div>
+
+        <div class="inputG"> 
+            <div class="cidade p-fluid">
+                <label>Cidade</label>
+                <input pInputText type="text">
+            </div>
+            
+            <div class="estado p-fluid" >
+                <label>Estado</label>
+               <input pInputText type="text">
+            </div>
+        </div> -->
 
         <!--Button -->
         <div class="btnSalvar">

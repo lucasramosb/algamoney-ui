@@ -4,6 +4,7 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
 .nome{ 
     width: 85%;
     
@@ -11,20 +12,30 @@
 .idade{ 
     width: 15%;
     padding: 0 15px;
+=======
+/* .nome{ 
+    width: 50%;
+>>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
     
-}
+} */
 .vlr{
     width: 30%;
     padding: 0 15px;
 }
 
 /* 2 linha */
+<<<<<<< HEAD
 .cidade{ 
     width: 80%;
+=======
+/* .cidade{ 
+    width: 50%;
+>>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
     
 }
 .estado{
     width: 20%;
+<<<<<<< HEAD
     padding: 0 15px;
 }   
 
@@ -36,6 +47,10 @@
     float: left;
     padding: 0 15px;
 }
+=======
+    padding-left: 15px;
+} */
+>>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
 
 /* 3 linha */
 /* .complemento{ 
@@ -54,6 +69,7 @@
 
 
 /* 3 linha */
+<<<<<<< HEAD
 /* .cidade{ 
     width: 50%;
     
@@ -61,6 +77,16 @@
 .estado{
     width: 50%;
     padding-left: 15px;
+=======
+/* .contato{ 
+    width: 20%;
+    padding-left: 15px;
+    
+} */
+/* .email{
+    width: 50%;
+    
+>>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
 } */
 
 /* Button */
@@ -73,4 +99,8 @@
    color: #3b82f6;
    cursor: pointer;
     
+}
+
+.grid{
+    margin-top: 15px;
 }
