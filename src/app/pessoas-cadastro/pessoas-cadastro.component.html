@@ -10,48 +10,40 @@
             </div>
         </div>
 
-        <div class="inputG"> 
-            <div class="desc p-fluid">
+        <div class="grid"> 
+            <div class="col-4">
                 <label>Nome</label>
-                <input pInputText type="text" #nome>
+                <input  ngModel #formNome="ngModel" name="nome" pInputText type="text" #nome>
+            </div>
+            <div class="col-1">
+                <label>Idade</label>
+                <input currencyMask ngModel #formIdade="ngModel" name="idade" pInputText type="text" #nome>
             </div>
         </div>
 
-        <div class="inputG"> 
-            <div class="lugadouro p-fluid">
+        <div class="grid"> 
+            <div class="col-4">
                 <label>Cidade</label>
-                <input pInputText type="text" #cidade>
+                <input ngModel #formCidade="ngModel" name="cidade" pInputText type="text" #cidade>
             </div>
             
-            <div class="numero p-fluid" >
+            <div class="col-1" >
                 <label>Estado</label>
-               <input pInputText type="text" #estado>
+               <input ngModel #formEstado="ngModel" name="estado" pInputText type="text" #estado>
             </div>
         </div>
 
-        <div class="inputG"> 
-            <div class="email p-fluid">
+        <div class="grid"> 
+            <div class="col-4">
                 <label>E-mail</label>
                 <input ngModel #formEmail="ngModel" name="email" pInputText type="text">
             </div>
         
-            <div class="celular p-fluid" >
+            <div class="col-3" >
                 <label>Celular</label>
                 <input ngModel #formCelular="ngModel" name="celular" pInputText type="text">   
             </div> 
         </div>
-
-        <!-- <div class="inputG"> 
-            <div class="cidade p-fluid">
-                <label>Cidade</label>
-                <input pInputText type="text">
-            </div>
-            
-            <div class="estado p-fluid" >
-                <label>Estado</label>
-               <input pInputText type="text">
-            </div>
-        </div> -->
 
         <!--Button -->
         <div class="btnSalvar">

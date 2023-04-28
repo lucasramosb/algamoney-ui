@@ -118,15 +118,6 @@
       "email": "lucas@gmail.com",
       "celular": "9999999",
       "id": 5
-    },
-    {
-      "nome": "Bianca",
-      "idade": 26,
-      "cidade": "Belo Horizonte",
-      "estado": "Mg",
-      "email": "bianca@gmail.com",
-      "celular": "99999999",
-      "id": 7
     }
   ],
   "categorias": [

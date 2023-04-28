@@ -4,116 +4,6 @@
     width: 100%;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.nome{ 
-    width: 85%;
-    
-}
-.idade{ 
-    width: 15%;
-    padding: 0 15px;
-=======
-/* .nome{ 
-    width: 50%;
->>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
-=======
-.desc{ 
-    width: 100%;
->>>>>>> parent of f74469f (atualização de inputs + primeflex)
-    
-}
-.vlr{
-    width: 30%;
-    padding: 0 15px;
-}
-
-/* 2 linha */
-<<<<<<< HEAD
-<<<<<<< HEAD
-.cidade{ 
-    width: 80%;
-=======
-/* .cidade{ 
-    width: 50%;
->>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
-=======
-.lugadouro{ 
-    width: 80%;
->>>>>>> parent of f74469f (atualização de inputs + primeflex)
-    
-}
-.numero{
-    width: 20%;
-<<<<<<< HEAD
-    padding: 0 15px;
-}   
-
-.email{ 
-    width: 50%;
-}
-.celular{
-    width: 30%;
-    float: left;
-    padding: 0 15px;
-}
-=======
-    padding-left: 15px;
-<<<<<<< HEAD
-} */
->>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
-=======
-}
->>>>>>> parent of f74469f (atualização de inputs + primeflex)
-
-/* 3 linha */
-/* .complemento{ 
-    width: 40%;
-    
-}
-.bairro{
-    width: 45%;
-    padding-left: 15px;
-}
-
-.cep{
-    width: 15%;
-    padding-left: 15px;
-} */
-
-
-/* 3 linha */
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* .cidade{ 
-    width: 50%;
-    
-}
-.estado{
-    width: 50%;
-    padding-left: 15px;
-=======
-/* .contato{ 
-    width: 20%;
-    padding-left: 15px;
-    
-} */
-/* .email{
-    width: 50%;
-    
->>>>>>> f74469f8e8ba452e0f912e40f201314e6fbe5bd6
-} */
-=======
-.cidade{ 
-    width: 50%;
-    
-}
-.estado{
-    width: 50%;
-    padding-left: 15px;
-}
->>>>>>> parent of f74469f (atualização de inputs + primeflex)
-
 /* Button */
 .btnSalvar{
     padding-top: 25px;
@@ -124,4 +14,11 @@
    color: #3b82f6;
    cursor: pointer;
     
+}
+
+.grid input{
+    width: 100%;
+}
+.grid{
+    margin-top: 20px;
 }
